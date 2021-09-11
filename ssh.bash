@@ -6,13 +6,13 @@ shopt -s extglob
 
 ssh_usage() {
   echo -e "
-pass ssh [--clip|-c]|[--save,-s] [--private|-p] pass-name
+pass ssh [--clip,-c]|[--save,-s] [--private,-p] pass-name
     Get SSH key from password store.
     If --private|-p, output private key (default public key).
     If --clip|-c, copy SSH public key to clipboard and clear automatically after 45 seconds.
     If --save|-s, save to tmp file and echo filename.
 
-pass ssh --generate|-g [--type <s>,-t <s>] pass-name
+pass ssh --generate,-g [--type <s>,-t <s>] pass-name
     Generate a new SSH key to add to the password store.
 
     Example: pass ssh -g servers/web/proxy01
